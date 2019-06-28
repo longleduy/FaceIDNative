@@ -32,8 +32,12 @@ const FaceScanerForm = memo(props => {
     return (
         <View style={{ flex: 1 }}>
             <View style={{ flex: 1, flexGrow: 1, justifyContent: 'center', alignItems: 'center' }}>
-                    <Image width={AppStyle.styleVariable.width100} height={AppStyle.styleVariable.height100 *.8} source={{ uri: faceData.image }} />
-
+                {/* {!faceData.image ? <Icon
+                    name='account-circle'
+                    size={AppStyle.styleVariable.width100 * .4}
+                    color='#eee' /> :
+                    } */}
+<Image width={AppStyle.styleVariable.width100} height={AppStyle.styleVariable.height100 *.8} source={{ uri: faceData.image }} />
             </View>
             <View style={{ flexDirection: 'row', marginVertical: 10 }}>
                 <Kohana
